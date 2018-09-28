@@ -11,6 +11,11 @@
 
 canvas#canvas { width: 512px; height: 512px; }
 
+	window.oncontextmenu = function(event) {
+     event.preventDefault();
+     event.stopPropagation();
+     return false;
+};
 .pico8_el {
 	float:left;
 	width:92px;
